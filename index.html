@@ -3,8 +3,10 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>My responsive blog: picture story</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
 </head>
 
 <body>
@@ -14,8 +16,8 @@
 				<img class="logoPic" src="images/udacity.svg">
 			</span>
 			<span class="nameTitle">
-				<div class="shadow name"><h1>James Solum</h1></div>
-				<div class="shadow title"><h4>UX/UI Developer</h4></div>
+				<h1 class="shadow name skinny">James Solum</h1>
+				<div class="shadow title thick"><h4>UX/UI Developer</h4></div>
 			</span>
 		</div>
 
@@ -25,24 +27,35 @@
 			<img class="image mainImage" src="images/main_image.jpg" alt="HTML code image">
 		</div>
 
-		<div class="shadow featuredWork"><h2>Featured Work</h2></div>
+		<div class="shadow featuredWork thick"><h2>Featured Work</h2></div>
 
 		<div class="projectContainer">
 			<figure class="project">
-				<img class="image projectImage" src="http://placecage.com/c/300/300" alt="Project"> 
-				<figcaption><h2>Title</h2><em>URL</em> </figcaption>
+				<picture>
+					<source media="(max-width: 775px)" srcset="images/memoryGame_200.jpg 1x, images/memoryGame_300.jpg 2x" type="image/jpeg">
+					<source media="(min-width: 776px)" srcset="images/memoryGame_300.jpg 1x, images/memoryGame_600.jpg 2x" type="image/jpeg">
+					<img class="image projectImage" src="images/memoryGame_300.jpg" alt="Memory Game"> 
+				</picture>
+				<figcaption><h3 class="thick projectTitle">Memory Game</h2><a class="url skinny" href="https://github.com/japsolum/memoryGame" target="_blank">https://github.com/japsolum/memoryGame</a> </figcaption>
 			</figure>
 			
 			<figure class="project">
-				<img class="image projectImage" src="http://placecage.com/c/300/300" alt="Project"> 
-				<figcaption><h2>Title</h2><em>URL</em> </figcaption>
+				<picture>
+					<source media="(max-width: 775px)" srcset="images/articleMock_200.jpg 1x, images/articleMock_300.jpg 2x" type="image/jpeg">
+					<source media="(min-width: 776px)" srcset="images/articleMock_300.jpg 1x, images/articleMock_600.jpg 2x" type="image/jpeg">
+					<img class="image projectImage" src="images/articleMock_300.jpg" alt="Article Mock"> 
+				</picture>
+				<figcaption><h3 class="thick projectTitle">Article Mockup</h2><a class="url skinny" href="https://github.com/japsolum/articleMockup" target="_blank">https://github.com/japsolum/articleMockup</a> </figcaption>
 			</figure>
 
 			<figure class="project">
-				<img class="image projectImage" src="http://placecage.com/c/300/300" alt="Project"> 
-				<figcaption><h2>Title</h2><em>URL</em> </figcaption>
+				<picture>
+					<source media="(max-width: 775px)" srcset="images/animalCard_200.jpg 1x, images/animalCard_300.jpg 2x" type="image/jpeg">
+					<source media="(min-width: 776px)" srcset="images/animalCard_300.jpg 1x, images/animalCard_600.jpg 2x" type="image/jpeg">
+					<img class="image projectImage" src="images/animalCard_300.jpg" alt="Animal Card"> 
+				</picture>
+				<figcaption><h3 class= "thick projectTitle">Animal Card Mockup</h3><a class="url skinny" href="https://github.com/japsolum/animalTradingCard" target="_blank">https://github.com/japsolum/animalTradingCard</a> </figcaption>
 			</figure>
-
 		</div>
 
 	</div>
