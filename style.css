@@ -7,7 +7,7 @@
 
 }
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 430px) {
 	.projectContainer {
 		display: block !important;
 	}
@@ -26,10 +26,11 @@
 	}
 }
 
-*{
+* {
 	font-family: 'Lato', sans-serif;
 	color: #2d3c49;
 }
+
 h1 {
 	margin: 0px;
 }
@@ -44,7 +45,8 @@ hr {
 	background-color: #7d97ad; 
 	margin-bottom: 10px;
 }
-a:hover{
+
+a:hover {
 	color: blue;
 }
 
