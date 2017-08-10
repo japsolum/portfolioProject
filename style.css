@@ -1,0 +1,71 @@
+
+*{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	color: #2d3c49;
+}
+h1 {
+	margin: 0px;
+}
+
+figure {
+	margin: 10px;
+}
+
+
+.shadow {
+	text-shadow: 5px 5px 8px lightslategrey;
+}
+
+.image {
+	box-shadow: 5px 5px 8px grey;
+}
+
+.container {
+	width: 100%;
+}
+
+.header {
+	display: flex;
+	height: 100px;
+}
+
+.nameTitle {
+	padding-right: 15px;
+	width: 49%;
+	text-align: right;
+	float: right;
+}
+.name{
+	font-weight: 400 !important;
+}
+
+.logo {
+	float: left;
+	width: 49%;
+}
+
+.logoPic {
+	width: 75px;
+}
+
+.imageHolder {
+	width: 100%;
+	text-align: center;
+}
+
+.mainImage {
+	width: 100%;
+	max-height: 320px;
+}
+
+.projectContainer {
+	display: flex;
+	width: 100%;
+	text-align: center;
+}
+
+.projectImage {
+	display: inline;
+	max-width: 100%;
+}
