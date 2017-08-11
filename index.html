@@ -1,3 +1,4 @@
+<!--Mockup of portfolio pdf with my information -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +12,7 @@
 
 <body>
 	<div class="container">
-		<div class="header">
+		<header>
 			<span class="logo">
 				<img class="logoPic" src="images/udacity.svg">
 			</span>
@@ -19,12 +20,16 @@
 				<h1 class="shadow name skinny">James Solum</h1>
 				<div class="shadow title thick"><h4>UX/UI Developer</h4></div>
 			</span>
-		</div>
+		</header>
 
 		<hr>
 
 		<div class="imageHolder">
-			<img class="image mainImage" src="images/main_image.jpg" alt="HTML code image">
+			<picture>
+					<source media="(max-width: 775px)" srcset="images/html_600.jpg 1x, images/html_900.jpg 2x" type="image/jpeg">
+					<source media="(min-width: 776px)" srcset="images/html_900.jpg 1x, images/html_1200.jpg 2x" type="image/jpeg">
+					<img class="image projectImage" src="images/memoryGame_300.jpg" alt="Memory Game"> 
+				</picture>
 		</div>
 
 		<div class="shadow featuredWork thick"><h2>Featured Work</h2></div>
