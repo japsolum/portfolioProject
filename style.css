@@ -51,16 +51,8 @@ hr {
 	margin-bottom: 10px;
 }
 
-a:hover {
-	color: blue;
-}
-
 .shadow {
 	text-shadow: 5px 5px 8px lightslategrey;
-}
-
-.image {
-	box-shadow: 5px 5px 8px grey;
 }
 
 .thick {
@@ -102,6 +94,7 @@ a:hover {
 }
 
 .mainImage {
+	box-shadow: 5px 5px 8px grey;
 	width: 100%;
 }
 
@@ -116,10 +109,15 @@ a:hover {
 }
 
 .projectImage {
+	box-shadow: 5px 5px 8px grey;
 	display: inline;
 	width: 100%;
 	height: 60%;
 	border-radius: 20px;
+}
+
+.projectImage:hover {
+	box-shadow: 3px 3px 5px lightgrey;
 }
 
 
